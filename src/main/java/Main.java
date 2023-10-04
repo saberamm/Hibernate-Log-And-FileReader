@@ -18,7 +18,7 @@ public class Main {
 
 //        ApplicationContext.getPersonService().save(person);
 
-//        ApplicationContext.getPersonService().signUp("asghar","shalqam");
+        ApplicationContext.getPersonService().signUp("asghar","shalqam");
 
 //        System.out.println(ApplicationContext.getPersonService().findById(1L));
 //

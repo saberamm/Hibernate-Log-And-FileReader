@@ -2,10 +2,22 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2023-10-04T18:28:15.559718900Z</date>
-  <millis>1696444095559</millis>
-  <nanos>718900</nanos>
+  <date>2023-10-04T18:32:31.766275Z</date>
+  <millis>1696444351766</millis>
+  <nanos>275000</nanos>
   <sequence>19</sequence>
+  <logger>BaseServiceImpl</logger>
+  <level>INFO</level>
+  <class>service.impl.PersonServiceImpl</class>
+  <method>signUp</method>
+  <thread>1</thread>
+  <message>Person signUp start in service</message>
+</record>
+<record>
+  <date>2023-10-04T18:32:31.768970700Z</date>
+  <millis>1696444351768</millis>
+  <nanos>970700</nanos>
+  <sequence>21</sequence>
   <logger>BaseServiceImpl</logger>
   <level>INFO</level>
   <class>base.service.impl.BaseServiceImpl</class>
