@@ -16,30 +16,30 @@ public class Main {
 
         Person person = new Person("ali", "ahmadi", "all", "word@tres", LocalDate.of(2010, 5, 5));
 
-        //ApplicationContext.getPersonService().save(person);
+        ApplicationContext.getPersonService().save(person);
 
-       // ApplicationContext.getPersonService().signUp("asghar","shalqam");
+        //ApplicationContext.getPersonService().signUp("asghar","shalqam");
 
-        System.out.println(ApplicationContext.getPersonService().findById(1L));
-
-        System.out.println(ApplicationContext.getPersonService().findAll());
-
-        System.out.println(ApplicationContext.getPersonService().findPersonByUsername("all"));
-
-        System.out.println(ApplicationContext.getPersonService().isContainById(1L));
-
-        Person d = ApplicationContext.getPersonService().findById(1L);
-        ApplicationContext.getPersonService().delete(d);
-
-        Person doo = ApplicationContext.getPersonService().findById(1L);
-        doo.setFirstName("reza");
-        ApplicationContext.getPersonService().update(doo);
+//        System.out.println(ApplicationContext.getPersonService().findById(1L));
+//
+//        System.out.println(ApplicationContext.getPersonService().findAll());
+//
+//        System.out.println(ApplicationContext.getPersonService().findPersonByUsername("all"));
+//
+//        System.out.println(ApplicationContext.getPersonService().isContainById(1L));
+//
+//        Person d = ApplicationContext.getPersonService().findById(1L);
+//        ApplicationContext.getPersonService().delete(d);
+//
+//        Person doo = ApplicationContext.getPersonService().findById(1L);
+//        doo.setFirstName("reza");
+//        ApplicationContext.getPersonService().update(doo);
 
 
 //--------------------student----------------------------------------
 
 
-        Student student = new Student("amin", "bazgir", "aminam", "qwerqwer",
+        Student student = new Student("amin", "asghari", "aminam", "qwerqwer",
                 LocalDate.of(2000, 3, 8), 4, "Mathematics",
                 LocalDate.of(2020, 7, 7));
 
