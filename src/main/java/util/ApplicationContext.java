@@ -1,5 +1,6 @@
 package util;
 
+import base.repository.impl.BaseRepositoryImpl;
 import jakarta.persistence.EntityManager;
 import repository.PersonRepository;
 import repository.StudentRepository;
@@ -16,7 +17,23 @@ import dto.DtoMapperImpl;
 import service.impl.StudentServiceImpl;
 import service.impl.TeacherServiceImpl;
 
+import java.io.IOException;
+import java.util.logging.FileHandler;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class ApplicationContext {
+    protected static final Logger logger = Logger.getLogger(ApplicationContext.class.getSimpleName());
+
+    static {
+        FileHandler fileHandler;
+        try {
+            fileHandler = new FileHandler(ApplicationContext.class.getSimpleName() + ".log");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        logger.addHandler(fileHandler);
+    }
 
 
     //------------person application context------------------//
@@ -31,6 +48,7 @@ public class ApplicationContext {
     }
 
     public static PersonService getPersonService() {
+        logger.log(Level.INFO,"getPersonService called in application context");
         return personService;
     }
 
@@ -46,6 +64,7 @@ public class ApplicationContext {
     }
 
     public static StudentService getStudentService() {
+        logger.log(Level.INFO,"getStudentService called in application context");
         return studentService;
     }
 
@@ -61,6 +80,7 @@ public class ApplicationContext {
     }
 
     public static TeacherService getTeacherService() {
+        logger.log(Level.INFO,"getTeacherService called in application context");
         return teacherService;
     }
 }

@@ -21,4 +21,5 @@ public interface BaseRepository<E extends BaseEntity<ID>, ID extends Serializabl
     boolean isContainById(ID id);
 
     EntityManager getEntityManager();
+    Class<E> getEntityClass();
 }

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-10-04T18:28:15.560720100Z</date>
+  <millis>1696444095560</millis>
+  <nanos>720100</nanos>
+  <sequence>20</sequence>
+  <logger>BaseRepositoryImpl</logger>
+  <level>INFO</level>
+  <class>base.repository.impl.BaseRepositoryImpl</class>
+  <method>getEntityManager</method>
+  <thread>1</thread>
+  <message>Person getEntityManager called in repository</message>
+</record>
+<record>
+  <date>2023-10-04T18:28:15.566730500Z</date>
+  <millis>1696444095566</millis>
+  <nanos>730500</nanos>
+  <sequence>21</sequence>
+  <logger>BaseRepositoryImpl</logger>
+  <level>INFO</level>
+  <class>base.repository.impl.BaseRepositoryImpl</class>
+  <method>save</method>
+  <thread>1</thread>
+  <message>Person save start in repository</message>
+</record>
+<record>
+  <date>2023-10-04T18:28:15.594160300Z</date>
+  <millis>1696444095594</millis>
+  <nanos>160300</nanos>
+  <sequence>22</sequence>
+  <logger>BaseRepositoryImpl</logger>
+  <level>INFO</level>
+  <class>base.repository.impl.BaseRepositoryImpl</class>
+  <method>save</method>
+  <thread>1</thread>
+  <message>Person save end in repository</message>
+</record>
+<record>
+  <date>2023-10-04T18:28:15.595163700Z</date>
+  <millis>1696444095595</millis>
+  <nanos>163700</nanos>
+  <sequence>23</sequence>
+  <logger>BaseRepositoryImpl</logger>
+  <level>INFO</level>
+  <class>base.repository.impl.BaseRepositoryImpl</class>
+  <method>getEntityManager</method>
+  <thread>1</thread>
+  <message>Person getEntityManager called in repository</message>
+</record>
+</log>

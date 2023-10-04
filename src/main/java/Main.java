@@ -14,11 +14,11 @@ public class Main {
 //--------------------person----------------------------------------
 
 
-        Person person = new Person("ali", "ahmadi", "all", "word@tres", LocalDate.of(2010, 5, 5));
+        Person person = new Person("ali", "ahmadi", "all", "word@yujh", LocalDate.of(2010, 5, 5));
 
-        ApplicationContext.getPersonService().save(person);
+//        ApplicationContext.getPersonService().save(person);
 
-        //ApplicationContext.getPersonService().signUp("asghar","shalqam");
+//        ApplicationContext.getPersonService().signUp("asghar","shalqam");
 
 //        System.out.println(ApplicationContext.getPersonService().findById(1L));
 //
